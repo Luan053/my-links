@@ -2,8 +2,35 @@ import Image from "next/image";
 import emojipc from "../public/emojipc.png";
 import Link from "next/link";
 import { Github } from "./components/icons/github.js";
+import { Button } from "./components/button";
 
 export default function Home() {
+  const infos = {
+    github: {
+      logo: <Github />,
+      linkName: "GitHub",
+      linkDesc: "github.com/Luan053",
+      href: "https://github.com/Luan053",
+    },
+    email: {
+      logo: <Github />,
+      linkName: "Email",
+      linkDesc: "luanschulz.contato@gmail.com",
+      href: "mailto:luanschulz.contato@gmail.com",
+    },
+    linkedin: {
+      logo: <Github />,
+      linkName: "LinkedIn",
+      linkDesc: "linkedin.com/in/luanrs-",
+      href: "https://www.linkedin.com/in/luanrs-/",
+    },
+    instagram: {
+      logo: <Github />,
+      linkName: "Instagram",
+      linkDesc: "instagram.com/luanschz",
+      href: "https://www.instagram.com/luanschz",
+    },
+  };
   return (
     <>
       <div className="w-screen h-screen flex items-center justify-center">
@@ -15,20 +42,17 @@ export default function Home() {
             alt="foto emoji"
             src={emojipc}
           />
-          <Link
-            className="flex flex-col gap-2 w-full"
-            target="_blank"
-            href="https://github.com/Luan053"
-          >
-            <button className="group relative inline-flex h-12 items-center rounded-lg bg-neutral-950 px-16 font-medium text-neutral-50">
-              <span className="z-10">github.com/luan053</span>
-              <div className="absolute left-1 inline-flex h-10 w-12 items-center rounded-md bg-zinc-900 transition-[width] group-hover:w-[calc(100%-8px)]">
-                <div className="ml-4">
-                  <Github />
-                </div>
-              </div>
-            </button>
-          </Link>
+          <div className="flex flex-col gap-2 w-full">
+            {Object.keys(infos).map((key) => (
+              <Button
+                key={key}
+                logo={infos[key].logo}
+                linkName={infos[key].linkName}
+                linkDesc={infos[key].linkDesc}
+                href={infos[key].href}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </>
