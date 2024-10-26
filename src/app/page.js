@@ -1,8 +1,10 @@
 import Image from "next/image";
 import emojipc from "../public/emojipc.png";
-import Link from "next/link";
 import { Github } from "./components/icons/github.js";
 import { Button } from "./components/button";
+import { Email } from "./components/icons/email";
+import { LinkedIn } from "./components/icons/linkedin";
+import { Instagram } from "./components/icons/instagram";
 
 export default function Home() {
   const infos = {
@@ -13,19 +15,19 @@ export default function Home() {
       href: "https://github.com/Luan053",
     },
     email: {
-      logo: <Github />,
+      logo: <Email />,
       linkName: "Email",
       linkDesc: "luanschulz.contato@gmail.com",
       href: "mailto:luanschulz.contato@gmail.com",
     },
     linkedin: {
-      logo: <Github />,
+      logo: <LinkedIn />,
       linkName: "LinkedIn",
       linkDesc: "linkedin.com/in/luanrs-",
       href: "https://www.linkedin.com/in/luanrs-/",
     },
     instagram: {
-      logo: <Github />,
+      logo: <Instagram />,
       linkName: "Instagram",
       linkDesc: "instagram.com/luanschz",
       href: "https://www.instagram.com/luanschz",
