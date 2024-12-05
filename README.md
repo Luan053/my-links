@@ -16,6 +16,7 @@ Se preferir acesse a página em: https://luanschz.netlify.app
 ## Funcionalidades
 
 - Exibe uma lista de links personalizados.
+- Contador de visualizações em tempo real
 - Design minimalista e responsivo.
 - Fácil personalização de conteúdo e estilo.
 
