@@ -4,7 +4,7 @@ Este projeto é uma página simples para exibir e organizar meus links pessoais,
 
 ## Demonstração
     
-![image](https://github.com/user-attachments/assets/b8590185-2656-4f9f-8f78-5407b97b548c)
+![mp4](https://github.com/user-attachments/assets/107b29ae-c2be-4208-8a78-fc452062821f)
 
 Se preferir acesse a página em: https://luanschz.netlify.app
 
