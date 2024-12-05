@@ -6,7 +6,7 @@ Este projeto é uma página simples para exibir e organizar meus links pessoais,
     
 ![image](https://github.com/user-attachments/assets/b8590185-2656-4f9f-8f78-5407b97b548c)
 
-Se preferir acesse a página em: [luanschz.netlify.app](# https://luanschz.netlify.app)
+Se preferir acesse a página em: https://luanschz.netlify.app
 
 ## Tecnologias Utilizadas
 
