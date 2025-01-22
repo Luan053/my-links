@@ -2,20 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+:root,
+[data-theme="light"] {
+  --background: #d5d6db;
+  --foreground: #343b58;
+  --primary: #34548a;
+  --secondary: #5a4a78;
+  --accent: #166775;
+  --muted: #787c99;
+  --card-bg: #e1e2e7;
+  --hover-bg: #cccdd2;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+[data-theme="dark"] {
+  --background: #1a1b26;
+  --foreground: #a9b1d6;
+  --primary: #7aa2f7;
+  --secondary: #bb9af7;
+  --accent: #7dcfff;
+  --muted: #565f89;
+  --card-bg: #24283b;
+  --hover-bg: #292e42;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilização para links e botões */
+.link-card {
+  background-color: var(--card-bg);
+  transition: all 0.2s ease-in-out;
+}
+
+.link-card:hover {
+  background-color: var(--hover-bg);
+  transform: translateY(-2px);
+}
+
+/* Estilização para textos e títulos */
+.text-primary {
+  color: var(--primary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.text-muted {
+  color: var(--muted);
 }

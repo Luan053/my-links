@@ -1,5 +1,5 @@
 import Image from "next/image";
-import emojipc from "../public/emojipc.png";
+import photo from "../public/photo.jpg";
 import { Github } from "./components/icons/github.js";
 import { Button } from "./components/button";
 import { Email } from "./components/icons/email";
@@ -39,16 +39,17 @@ export default function Home() {
       <div className="absolute p-2">
         <ViewCounter />
       </div>
-      <div className="w-screen h-screen flex items-center justify-center">
-        <div className="bg-zinc-900 select-none z-0 lg:w-1/3 flex flex-col items-center p-4 rounded-md gap-4">
+      <div className="w-screen h-screen flex items-center justify-center bg-background">
+        <div className="bg-card-bg select-none z-0 lg:w-1/3 flex flex-col items-center p-4 rounded-md gap-4 shadow-lg">
           <Image
             width={110}
             height={110}
-            className="rounded-full"
-            alt="foto emoji"
-            src={emojipc}
+            className="rounded-full border-2 border-primary"
+            alt="foto pessoal"
+            src={photo}
+            quality={100}
           />
-          <span className="font-[family-name:var(--font-geist-sans)]">
+          <span className="font-[family-name:var(--font-geist-sans)] text-xl text-foreground font-semibold">
             Luan Schulz
           </span>
           <div className="flex flex-col gap-2 w-full">
