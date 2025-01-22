@@ -65,6 +65,20 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div>
+        <p className="absolute bottom-2 left-2 text-sm text-muted font-[family-name:var(--font-geist-mono)]">
+          Fiz esse negócio de links para mim, mas tá lá no{" "}
+          <a
+            className="text-primary"
+            href="https://github.com/Luan053/my-links"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>{" "}
+          pra quem quiser baixar, editar e usar como quiser! 👾
+        </p>
+      </div>
     </>
   );
 }
